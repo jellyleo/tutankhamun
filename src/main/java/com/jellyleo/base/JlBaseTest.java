@@ -4,8 +4,8 @@
  */
 package com.jellyleo.base;
 
-import org.junit.After;
-import org.junit.Before;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.springframework.boot.test.context.SpringBootTest;
 
 /**
@@ -18,17 +18,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class JlBaseTest {
 
-	@Before
+	@BeforeEach
 	public void init() {
 
-		System.out.println("开始测试-----------------");
+		System.out.println("\033[32;1m" + "************开始测试************" + "\033[0m");
 
 	}
 
-	@After
+	@AfterEach
 	public void after() {
 
-		System.out.println("测试结束-----------------");
+		System.out.println("\033[31;1m" + "************结束测试************" + "\033[0m");
 	}
 
 }

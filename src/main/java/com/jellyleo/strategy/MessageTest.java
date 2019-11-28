@@ -1,6 +1,6 @@
 package com.jellyleo.strategy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.jellyleo.base.JlBaseTest;

@@ -11,7 +11,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
 /**
- * 功能描述:pring的启动过程中，通过解析注解，将消息类型->消息处理对象的映射关系保存到MessageServiceContext对象中
+ * 功能描述:spring的启动过程中，通过解析注解，将消息类型->消息处理对象的映射关系保存到MessageServiceContext对象中
  *
  * @author Jelly
  * @created 2019年11月22日

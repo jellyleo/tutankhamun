@@ -18,7 +18,7 @@ import com.jellyleo.base.JlBaseTest;
  * @created 2019年11月22日
  * @version 1.0.0
  */
-public class OptionalTest extends JlBaseTest {
+public class OptionalApiTest extends JlBaseTest {
 
 	@Test(expected = NoSuchElementException.class)
 	public void whenCreateEmptyOptional_thenNull() {
@@ -33,8 +33,8 @@ public class OptionalTest extends JlBaseTest {
 	@Test(expected = NullPointerException.class)
 	public void whenCreateOfEmptyOptional_thenNullPointerException() {
 		User user = null;
-		Optional<User> opt = Optional.of(user);
-//	    Optional<User> opt = Optional.ofNullable(user);
+//		Optional<User> opt = Optional.of(user);
+	    Optional<User> opt = Optional.ofNullable(user);
 		opt.get();
 	}
 
@@ -162,6 +162,9 @@ public class OptionalTest extends JlBaseTest {
 		assertTrue(result.isPresent());
 	}
 
+	/*
+	 * 为了更充分的使用 Optional，可以链接组合其大部分方法，因为它们都返回相同类似的对象。
+	 */
 	@Test
 	public void whenChaining_thenOk() {
 		User user = new User("anna@gmail.com", "1234");
